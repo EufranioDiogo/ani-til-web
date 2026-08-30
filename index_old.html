@@ -4,7 +4,7 @@
 <head>
   <meta charset="UTF-8">
   <meta name="viewport" content="width=device-width, initial-scale=1.0">
-  <title>Anibal &amp; Tílcia · 15 de Dezembro, 2026</title>
+  <title>Tílcia &amp; Anibal · 15 de Dezembro, 2026</title>
   <link rel="preconnect" href="https://fonts.googleapis.com">
   <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin>
   <link
@@ -15,89 +15,12 @@
 
 <body>
 
-  <!-- ===================== PHYSICAL INVITATION OPENING ===================== -->
-  <div class="invitation-cover" id="invitation-cover" aria-modal="true" role="dialog" aria-label="Convite de casamento">
-    <div class="invitation-cover__ambient" aria-hidden="true"></div>
-
-    <div class="invitation-card" id="invitation-card">
-      <div class="invitation-card__inside">
-        <span class="invitation-card__mini">Com alegria, convidamos-te</span>
-        <span class="invitation-card__initials">A <i>&amp;</i> T</span>
-        <span class="invitation-card__inside-date">15 · 12 · 2026</span>
-      </div>
-
-      <div class="invitation-card__front">
-        <div class="invitation-card__ornament" aria-hidden="true">
-          <span></span><span></span><span></span>
-        </div>
-
-        <div class="invitation-card__monogram">
-<img src="./assets/orla_floral_oliva.png" class="invitation-card__monogram" alt="Monograma dos noivos">
-      <p class="monogram__letters"><span>A</span><i>&amp;</i><span>T</span></p>
-
-        </div>
-        
-
-        <p class="invitation-card__eyebrow">Convite de casamento</p>
-        <h1 class="invitation-card__names">Anibal <span>&amp;</span> Tílcia </h1>
-        <p class="invitation-card__date">15 de Dezembro · 2026</p>
-
-        <button type="button" class="invitation-card__open" id="open-invitation">
-          <span class="invitation-card__seal">♡</span>
-          <span>ABRIR CONVITE</span>
-        </button>
-
-        <div class="invitation-card__hint">
-          <span class="invitation-card__hand">↘</span>
-          Toque para abrir
-        </div>
-      </div>
-    </div>
-
-    <p class="invitation-cover__caption">Um dia para celebrar o amor.</p>
-  </div>
-
-  <!-- ===================== TOP NAVIGATION ===================== -->
-  <header class="site-header" id="site-header">
-    <a class="site-brand" href="#inicio" aria-label="Voltar ao início">
-      <span>A</span><i>&amp;</i><span>T</span>
-    </a>
-
-    <nav class="site-nav" aria-label="Navegação principal">
-      <a href="#inicio">Início</a>
-      <a href="#historia">A nossa história</a>
-      <a href="#detalhes">O grande dia</a>
-      <a href="#contribuicao">Contribuição</a>
-      <a href="#rsvp">RSVP</a>
-    </nav>
-
-    <button class="site-nav__toggle" id="nav-toggle" type="button" aria-label="Abrir menu" aria-expanded="false">
-      <span></span><span></span><span></span>
-    </button>
-  </header>
-
-  <!-- ===================== MUSIC CONTROL ===================== -->
-  <div class="music-control" id="music-control">
-    <button type="button" class="music-control__button" id="music-toggle" aria-label="Reproduzir música"
-      aria-pressed="false">
-      <span class="music-control__icon music-control__icon--play">▶</span>
-      <span class="music-control__icon music-control__icon--pause">Ⅱ</span>
-    </button>
-    <span class="music-control__label" id="music-label">Música</span>
-    <audio id="wedding-music" loop preload="auto">
-      <source src="./resources/audio/risk_it_all.mp3" type="audio/mpeg">
-    </audio>
-          <canvas id="music-visualizer" width="46" height="22" aria-hidden="true"></canvas>
-
-  </div>
-
-
   <!-- ===================== HERO ===================== -->
-  <section class="hero" id="inicio">
-<!--
+  <section class="hero">
+
     <div class="couple-monogram">
       <img class="couple-monogram" src="./assets/orla_floral_oliva.png" />
-    </div>-->
+    </div>
 
     <!-- floral ornament, one image mirrored into all four corners -->
     <img src="./assets/width_1418.webp" class="floral corner-tl" aria-hidden="true"></img>
@@ -117,7 +40,7 @@
         <img src="./assets/IMG_8782.JPG.jpeg" class="arch arch--two"></img>
       </div>
 
-      <h1 class="hero__names" data-reveal>Anibal <span class="amp">&amp;</span> Tílcia</h1>
+      <h1 class="hero__names" data-reveal>Tílcia <span class="amp">&amp;</span> Anibal</h1>
       <p class="hero__tagline" data-reveal>Convidante a celebrar esta união para um sempre!</p>
     </div>
 
@@ -171,7 +94,7 @@
   </section>
 
   <!-- ===================== STORY GRID ===================== -->
-  <section class="story" id="historia">
+  <section class="story">
     <div class="story__grid">
 
       <article class="story__card story__card--dark" data-reveal>
@@ -183,7 +106,7 @@
       </article>
 
       <article class="story__card story__card--sand" data-reveal>
-        <span class="story__num">02</span>
+        <span class="story__num">04</span>
 
         <svg class="story__rings" viewBox="0 0 80 60" aria-hidden="true">
           <circle cx="30" cy="34" r="16" fill="none" stroke="currentColor" stroke-width="2" />
@@ -202,7 +125,7 @@
         <span class="story__num">03</span>
         <h3 class="story__title">Uma história,<br>dois caminhos</h3>
         <p class="story__body">Duas pessoas, duas histórias e tantos caminhos percorridos. Até que os nossos caminhos se
-          cruzaram novamente e percebemos que alguns encontros não acontecem por acaso.</p>
+          cruzaram e percebemos que alguns encontros não acontecem por acaso.</p>
         <div class="story__divider" aria-hidden="true">
           <svg viewBox="0 0 220 60">
             <path d="M10 5 C 10 45, 105 20, 110 55 C 115 20, 210 45, 210 5" fill="none" stroke="currentColor"
@@ -213,7 +136,7 @@
       </article>
 
       <article class="story__card story__card--olive" data-reveal>
-        <span class="story__num">04</span>
+        <span class="story__num">02</span>
         <img class="story__media" src="./assets/IMG_8758.JPG.jpeg" alt="Imagem da história 1"></img>
         <p class="story__verse">Quem encontra uma esposa encontra algo<br>excelente; recebeu uma bênção do Senhor.</p>
         <p class="story__ref">Provérbios 18:22</p>
@@ -225,7 +148,7 @@
 
 
   <!-- ===================== DAY INFO ===================== -->
-  <section class="info" id="detalhes">
+  <section class="info">
     <div class="info__header" data-reveal>
       <h2 class="info__title">Detalhes do Grande Dia</h2>
       <p class="info__subtitle">
@@ -237,78 +160,65 @@
     <div class="info__grid">
 
       <!-- CERIMÓNIA -->
-      <div class="more-info-card">
-        <img
-          src="https://lh3.googleusercontent.com/gps-cs-s/AHRPTWlp6Hk5C6ENDK__10fyXMDpLY3RmtTB0FeUsMW05rq-A3_OJv60hBOO5OTsbv5qQ-3rLyHym6tTQRL9K2UCrjUsnP6I80L73qXvY4hCrDxc9M-ThZ_d9FkAn9VJUuiXGmzrRHuK=w408-h544-k-no"
-          class="more-info-card-img" alt="">
-        <article class="info__card" data-reveal>
-          <div class="info__icon-wrap">
-            <svg class="info__icon" viewBox="0 0 24 24" aria-hidden="true">
-              <!-- Church -->
-              <path d="M12 3v5M8 9l4-3 4 3v11H8V9Z" fill="none" stroke="currentColor" stroke-width="1.25"
-                stroke-linejoin="round" />
-              <path d="M5 11l7-5 7 5v9H5v-9Z" fill="none" stroke="currentColor" stroke-width="1.25"
-                stroke-linejoin="round" />
-              <path d="M10 20v-5a2 2 0 0 1 4 0v5" fill="none" stroke="currentColor" stroke-width="1.25" />
-            </svg>
-          </div>
+      <article class="info__card" data-reveal>
+        <div class="info__icon-wrap">
+          <svg class="info__icon" viewBox="0 0 24 24" aria-hidden="true">
+            <!-- Church -->
+            <path d="M12 3v5M8 9l4-3 4 3v11H8V9Z" fill="none" stroke="currentColor" stroke-width="1.25"
+              stroke-linejoin="round" />
+            <path d="M5 11l7-5 7 5v9H5v-9Z" fill="none" stroke="currentColor" stroke-width="1.25"
+              stroke-linejoin="round" />
+            <path d="M10 20v-5a2 2 0 0 1 4 0v5" fill="none" stroke="currentColor" stroke-width="1.25" />
+          </svg>
+        </div>
 
-          <div class="info__content">
-            <h3 class="info__card-title">Cerimónia Religiosa</h3>
+        <div class="info__content">
+          <h3 class="info__card-title">Cerimónia Religiosa</h3>
 
-            <p class="info__time">19h00</p>
+          <p class="info__time">19h00</p>
 
-            <p class="info__place">
-              Nossa Senhora dos Remédios - Mutamba
-            </p>
+          <p class="info__place">
+            Nossa Senhora dos Remédios - Mutamba
+          </p>
 
-            <button class="info__btn" type="button" data-map="Nossa Senhora dos Remédios, Mutamba, Luanda">
-              Ver localização
-            </button>
-          </div>
-        </article>
-      </div>
+          <button class="info__btn" type="button" data-map="Nossa Senhora dos Remédios, Mutamba, Luanda">
+            Ver localização
+          </button>
+        </div>
+      </article>
 
 
-      <div class="more-info-card">
-        <img src="https://lh3.googleusercontent.com/gps-cs-s/AHRPTWnQiHRYGVPwsvvzDjpKC6Te1Tc4ReHqnd2wbv8dk3sn313zh0V4iKM3so6A6CPs7udDYUhjcywj2QQHGDvHgf7apJHHsOnpSBzATFUAP61ElOikkhbpd61YWRZIvSMjrfs_gKT-RbCJSNjZ=w426-h240-k-no" class="more-info-card-img" alt="">
-        <article class="info__card" data-reveal>
-
-          <div class="info__icon-wrap">
-            <svg class="info__icon" viewBox="0 0 24 24" aria-hidden="true">
-              <!-- Champagne / cocktail glass -->
-              <path d="M7 4h10l-2.1 6.3a3 3 0 0 1-5.8 0L7 4Z" fill="none" stroke="currentColor" stroke-width="1.25"
-                stroke-linejoin="round" />
-              <path d="M12 13v7M8.5 20h7" fill="none" stroke="currentColor" stroke-width="1.25"
-                stroke-linecap="round" />
-              <path d="M5 6l2.5 1M19 6l-2.5 1" fill="none" stroke="currentColor" stroke-width="1"
-                stroke-linecap="round" />
-            </svg>
-          </div>
-
-          <div class="info__content">
-            <h3 class="info__card-title">Copo de Água</h3>
-
-            <p class="info__time">21h00</p>
-
-            <p class="info__place">
-              Salão de Festas LUDAR - Talatona
-            </p>
-
-            <button class="info__btn" type="button" data-map="Salão de Festas LUDAR, Talatona, Luanda">
-              Ver localização
-            </button>
-          </div>
-        </article>
-      </div>
       <!-- COPO DE ÁGUA -->
+      <article class="info__card" data-reveal>
+        <div class="info__icon-wrap">
+          <svg class="info__icon" viewBox="0 0 24 24" aria-hidden="true">
+            <!-- Champagne / cocktail glass -->
+            <path d="M7 4h10l-2.1 6.3a3 3 0 0 1-5.8 0L7 4Z" fill="none" stroke="currentColor" stroke-width="1.25"
+              stroke-linejoin="round" />
+            <path d="M12 13v7M8.5 20h7" fill="none" stroke="currentColor" stroke-width="1.25" stroke-linecap="round" />
+            <path d="M5 6l2.5 1M19 6l-2.5 1" fill="none" stroke="currentColor" stroke-width="1"
+              stroke-linecap="round" />
+          </svg>
+        </div>
 
+        <div class="info__content">
+          <h3 class="info__card-title">Copo de Água</h3>
+
+          <p class="info__time">21h00</p>
+
+          <p class="info__place">
+            Salão de Festas LUDAR - Talatona
+          </p>
+
+          <button class="info__btn" type="button" data-map="Salão de Festas LUDAR, Talatona, Luanda">
+            Ver localização
+          </button>
+        </div>
+      </article>
 
 
       <!-- DRESS CODE -->
-             <div class="more-info-card">
-        <img src="./assets/IMG_8748.JPG.jpeg" class="more-info-card-img" alt="">
-<article class="info__card" data-reveal>
+      <article class="info__card" data-reveal>
         <div class="info__icon-wrap">
           <svg class="info__icon" viewBox="0 0 24 24" aria-hidden="true">
             <!-- Dress -->
@@ -329,15 +239,13 @@
           </p>
         </div>
       </article>
-        </div>
-      
 
     </div>
   </section>
 
 
   <!-- ===================== CONTRIBUTIONS ===================== -->
-  <section class="gift" id="contribuicao">
+  <section class="gift">
     <div class="gift__bg" aria-hidden="true"></div>
     <div class="gift__inner">
       <h2 class="gift__title" data-reveal>Pode nos ajudar a concretizar o<br>nosso sonho!</h2>
@@ -347,28 +255,28 @@
       <div class="gift__cards" data-reveal>
         <div class="gift__card">
           <span class="gift__label">Titular da Conta</span>
-          <p class="gift__value">Aníbal Francisco Gomes Brito</p>
+          <p class="gift__value">Tílcia [Apelido</p>
 
           <span class="gift__label">Banco</span>
-          <p class="gift__value">BAI</p>
+          <p class="gift__value">[Nome do Banco]</p>
 
           <span class="gift__label">IBAN</span>
           <div class="gift__copy-row">
-            <p class="gift__value gift__value--mono" data-copy="004000002075182810179">AO06 0040 0000 2075 1828 1017 9
-            </p>
+            <p class="gift__value gift__value--mono" data-copy="AO06 0000 0000 0000 0000 0000 0">AO06 0000 0000 0000
+              0000 0000 0</p>
             <button class="gift__copy-btn" type="button" data-copy-target>Copiar</button>
           </div>
 
           <span class="gift__label">Express</span>
           <div class="gift__copy-row">
-            <p class="gift__value gift__value--mono" data-copy="939563362">939563362</p>
+            <p class="gift__value gift__value--mono" data-copy="0000000000">0000000000</p>
             <button class="gift__copy-btn" type="button" data-copy-target>Copiar</button>
           </div>
         </div>
 
         <div class="gift__card gift__card--alt">
-          <span class="gift__label">Titular da Conta</span>
-          <p class="gift__value">Tilcia_1</p>
+          <span class="gift__label">Moeda</span>
+          <p class="gift__value">Kwanzas (AOA)</p>
 
           <span class="gift__label">Banco</span>
           <p class="gift__value">[Nome do Banco]</p>
@@ -393,7 +301,7 @@
   </section>
 
   <!-- ===================== RSVP ===================== -->
-  <section class="rsvp" id="rsvp">
+  <section class="rsvp">
     <div class="rsvp__grid">
 
       <div class="rsvp__media" data-reveal>
