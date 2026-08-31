@@ -1301,6 +1301,12 @@ button {
   position: relative;
   max-width: var(--container);
   margin: 0 auto;
+  display: flex;
+  flex-direction:column;
+  align-items: center;
+}
+.gift__inner img {
+  margin-bottom: 15px;
 }
 
 .gift__title {
