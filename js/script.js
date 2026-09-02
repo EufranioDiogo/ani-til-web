@@ -1,8 +1,6 @@
 async function submitForm(e, body) {
   e.preventDefault();
   const SCRIPT_URL = window.ENV.SCRIPT_URL;
-
-  console.log(SCRIPT_URL);
   
   const rsvpForm = document.getElementById("rsvp-form");
   const submitBtn = rsvpForm.querySelector(".rsvp__submit");
