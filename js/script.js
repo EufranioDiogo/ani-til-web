@@ -20,6 +20,7 @@ async function submitForm(e, body) {
 
     // Como "no-cors" não permite ler a resposta, assume-se sucesso
 
+    rsvpForm.style.display = "none";
     if (body.presence === true) {
       successTitle.textContent = `Obrigado, ${body.name}!`;
       successText.textContent =
