@@ -1,6 +1,12 @@
 async function submitForm(e, body) {
   e.preventDefault();
   const SCRIPT_URL = window.ENV.SCRIPT_URL;
+  const rsvpForm = document.getElementById("rsvp-form");
+  const submitBtn = rsvpForm.querySelector(".rsvp__submit");
+  const errorEl = document.getElementById("rsvp-error");
+  const successEl = document.getElementById("rsvp-success");
+  const successTitle = document.getElementById("rsvp-success-title");
+  const successText = document.getElementById("rsvp-success-text");
 
   try {
     await fetch(SCRIPT_URL, {
@@ -12,12 +18,6 @@ async function submitForm(e, body) {
     });
 
     // Como "no-cors" não permite ler a resposta, assume-se sucesso
-    const rsvpForm = document.getElementById("rsvp-form");
-    const submitBtn = rsvpForm.querySelector(".rsvp__submit");
-    const errorEl = document.getElementById("rsvp-error");
-    const successEl = document.getElementById("rsvp-success");
-    const successTitle = document.getElementById("rsvp-success-title");
-    const successText = document.getElementById("rsvp-success-text");
 
     submitBtn.classList.remove("is-loading");
     submitBtn.disabled = false;
