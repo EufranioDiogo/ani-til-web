@@ -4,7 +4,7 @@
   /* =========================================================
      WEDDING DATE — edit this if the date ever changes
      ========================================================= */
-  const WEDDING_DATE = new Date("2026-12-15T19:00:00");
+  const WEDDING_DATE = new Date("2026-12-19T19:00:00");
 
   /* =========================================================
      INVITATION OPENING + MUSIC
