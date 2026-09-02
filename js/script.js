@@ -7,7 +7,7 @@ async function submitForm(e, body) {
       method: "POST",
       mode: "no-cors", // necessário para Apps Script
       headers: { "Content-Type": "application/json" },
-      body: JSON.stringify(body),
+      body: JSON.stringify({ ...body, attending: attending ? "Sim" : "Não" }),
     });
 
     // Como "no-cors" não permite ler a resposta, assume-se sucesso
@@ -467,31 +467,14 @@ async function submitForm(e, body) {
 
       submitForm(e, body)
         .then((res) => {
-          console.log("Formulário enviado com sucesso:", res);
-          const response = res.data;
-          console.log("Formulário enviado com sucesso:", response);
+          guestsInput.value = 0;
+          nameInput.value = "";
+          messageMobileNumberInput.value = "";
+          messageInput.value = "";
         })
         .catch((error) => {
           console.error("Erro ao enviar formulário:", error);
         });
-
-      /*
-      // simulated submit — replace with a real endpoint / form service when ready
-      setTimeout(() => {
-        submitBtn.classList.remove("is-loading");
-        submitBtn.disabled = false;
-
-        rsvpForm.hidden = true;
-        successEl.hidden = false;
-
-        if (attending === "sim"){
-          successTitle.textContent = `Obrigado, ${name}!`;
-          successText.textContent = "Mal podemos esperar para celebrar este dia convosco.";
-        } else {
-          successTitle.textContent = `Vamos sentir a vossa falta, ${name}.`;
-          successText.textContent = "Obrigado por nos avisarem — ficará sempre no nosso coração.";
-        }
-      }, 900);*/
     });
   }
 
