@@ -15,7 +15,7 @@ async function submitForm(e, body) {
       signal: AbortSignal.timeout(10000), // 10s timeout
       mode: "no-cors", // necessário para Apps Script
       headers: { "Content-Type": "application/json" },
-      body: JSON.stringify({ ...body, attending: attending ? "Sim" : "Não" }),
+      body: JSON.stringify(body),
     });
 
     // Como "no-cors" não permite ler a resposta, assume-se sucesso
