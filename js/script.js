@@ -19,12 +19,6 @@ async function submitForm(e, body) {
 
     // Como "no-cors" não permite ler a resposta, assume-se sucesso
 
-    submitBtn.classList.remove("is-loading");
-    submitBtn.disabled = false;
-
-    rsvpForm.hidden = true;
-    successEl.hidden = false;
-
     if (body.presence === true) {
       successTitle.textContent = `Obrigado, ${body.name}!`;
       successText.textContent =
@@ -37,6 +31,12 @@ async function submitForm(e, body) {
   } catch (error) {
     successTitle.textContent = `${body.name}, Infelizmente não foi possível confirmar a sua presença, tente mais tarde e contacte o anfitrião!`;
   }
+
+  submitBtn.classList.remove("is-loading");
+  submitBtn.disabled = false;
+
+  rsvpForm.hidden = true;
+  successEl.hidden = false;
 }
 
 (() => {
@@ -468,10 +468,7 @@ async function submitForm(e, body) {
 
       submitForm(e, body)
         .then((res) => {
-          guestsInput.value = 0;
-          nameInput.value = "";
-          messageMobileNumberInput.value = "";
-          messageInput.value = "";
+          console.log(res);
         })
         .catch((error) => {
           console.error("Erro ao enviar formulário:", error);
